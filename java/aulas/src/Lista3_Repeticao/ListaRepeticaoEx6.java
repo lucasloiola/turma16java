@@ -9,19 +9,20 @@ import java.util.Scanner;
 public class ListaRepeticaoEx6 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int numero = 0, multiplos = 0, soma = 0, contador = 0;
+		int numero = 0;
+		double soma = 0, contador = 0;
 		
 		do {
 			System.out.print("Digite um número: ");
 			numero = ler.nextInt();
 			
-			if(numero%3 == 0 && numero != 0) {
+			if(numero%3 == 0) {
 				contador++;
 				soma += numero;
 			}
 			
 		}while(numero != 0);
 		
-		System.out.printf("\nA média dos múltiplos de 3 é %d",soma/contador);
+		System.out.printf("\nA média dos múltiplos de 3 é %.2f",soma/contador);
 	}
 }
