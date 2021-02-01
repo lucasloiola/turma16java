@@ -13,8 +13,7 @@ public class agendaEventos {
 		String nome;
 		
 		System.out.print("Bom dia, qual é seu nome? ");
-		nome = in.nextLine();
-		System.out.println();
+		nome = in.next();
 		
 		do {
 			for(int i = 0; i < 24; i++){
@@ -41,15 +40,14 @@ public class agendaEventos {
 						
 				if(evento[hora][dia-1] == ""){
 					System.out.print("Informe qual o evento: ");
-					System.out.println();
+					in.nextLine(); //lima o buffer
 					evento[hora][dia-1] = in.nextLine();
-					System.out.println();
 				} else {
 					System.out.print("Essa data já está reservada \n");
 				}
 				
 				
-				System.out.print("\n" + nome + ", você quer fazer mais um agendamento (S/N)? ");
+				System.out.print(nome + ", você quer fazer mais um agendamento (S/N)? ");
 				continua = in.next().toUpperCase();
 				
 			} while (continua.equals("S"));
