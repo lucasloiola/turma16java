@@ -5,6 +5,7 @@ public class Paciente {
 	private String setor;
 	private String enfermidade;
 	private String situacao;
+	
 	public String getNome() {
 		return nome;
 	}
