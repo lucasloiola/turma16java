@@ -12,10 +12,12 @@ public class TestesErro {
 			System.out.println("Digite uma posição da lista: ");
 			int posicao = leia.nextInt();
 			System.out.println("O nome na posição escolhida é "+vetor[posicao]);
-		}catch(java.lang.ArrayIndexOutOfBoundsException erro) {
-			System.out.println("Migo, você digitou um tamanho de índice errado!!");
-		}
-		
+		}catch (Exception e) {
+		      System.out.println("Algo deu errado hein.");
+	    } finally {
+	      System.out.println("Fim de verificação de erros.");
+	    }
+
 		System.out.println("Fim de programa");
 		}
 }
