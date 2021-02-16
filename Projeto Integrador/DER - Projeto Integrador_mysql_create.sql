@@ -1,3 +1,7 @@
+create database db_ecommerce;
+
+use db_ecommerce;
+
 CREATE TABLE `usuario` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`nome` varchar(255) NOT NULL,
